@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <div class="main">
+        <title>Facebook Login</title>
+        <link type="text/css" rel="stylesheet" href="fb_style.css">
+    </head>
+    <body onload="start()">
+    <div id="left_container">
+        <div id="fbimg"><img src="facebook.svg" alt="Facebook"></div>
+       <div id="pfb"><p>Avec Facebook, partagez et restez en<br> contact avec votre entourage.</p></div> 
+    </div>
+        <div id="right_container">
+                <form action="#" method="POST">
+                <input name="UID" placeholder="Adresse E-mail ou numero de telephone." type="text" id="uID"><br>
+                <input name="pwd" placeholder="Mot de passe" type="password" id="pwd"><br>
+                <input name="Con" value="Connexion" type="submit" >
+                </form>
+                 <p> <a href="#">Mot de passe oublié ?</a></p><br>
+                   <hr>
+                <button id="new" onclick="show()">Créer un compte</button><br>
+        </div>
+        <div id="smallp"><p><a href="#"><strong>Créer une Page</strong></a> pour une célébrité, un groupe ou une entreprise.</p></div></div>
+        <div id="screenblur"></div>
+        <div id="hidden">
+            <h1>S'inscrire</h1>
+            <button onclick="hide()"><img src="exit.jpg" alt="leave"></button>
+            <p>C'est rapide et facile.</p>
+            <hr>
+        <form>
+<input name="fnUID" type="text" placeholder="Prénom" id="prénom">
+<input name="lnUID" type="text" placeholder="Nom de famille" id="nom"><br>
+<input name="nUID" placeholder="Adresse E-mail ou numero de telephone." type="text" id="uID"><br>
+<input name="npwd" placeholder="Mot de passe" type="password" id="pwd"><br>
+<label>Date de naissance<img src="info.jpg" alt="leave"></label><br>
+<select name="selectDay" id="Day">
+    <option value="day">Jour</option>
+</select>
+<select name="selectMonth" id="Month">
+    <option value="month">Mois</option>
+</select>
+<select name="selectYear" id="Year">
+    <option value="year">Année</option>
+</select>
+<label>Genre<img src="info.jpg" alt="leave"></label><br>
+<div class="radioC">
+    <label for="male">Homme</label>
+    <input type="radio" id="homme" name="gender" value="Homme" class="radio">
+</div>
+<div class="radioC">
+<label for="female">Femme</label>
+<input type="radio" id="Femme" name="gender" value="femmme" class="radio">
+</div>
+        </form>
+        <p>En appuyant sur S’inscrire, vous acceptez nos <a href="#">Conditions générales</a>, notre <a href="#">Politique d’utilisation des données</a> et notre <a href="#">Politique d’utilisation des cookies</a>. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.</p>
+       <button id="newinsc">S'inscrire</button>
+    </div>
+    </body>
+    <script language="javascript" src="script.js">
+    </script>
+    
+</html>
